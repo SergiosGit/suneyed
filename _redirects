@@ -1,0 +1,10 @@
+# Cloudflare Pages redirects
+# Format: /from  /to  [status]
+
+/how-it-works    /how-it-works.html    200
+/installers      /installers.html      200
+/support         /support.html         200
+/privacy         /privacy.html         200
+
+# Installer form success
+/installer-form-success    /installers.html?success=true    302
