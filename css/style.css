@@ -85,7 +85,9 @@ h1, h2, h3 {
 }
 
 .nav__logo-sun {
-    font-size: 22px;
+    height: 22px;
+    width: auto;
+    vertical-align: middle;
 }
 
 .nav__links {
@@ -437,6 +439,13 @@ h1, h2, h3 {
     font-size: 18px;
     font-weight: 700;
     color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.footer__logo-img {
+    height: 20px;
+    width: auto;
 }
 
 .footer__links {
