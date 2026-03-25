@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>How It Works — SunEyed Solar Savings Calculator</title>
+    <meta name="description" content="How SunEyed calculates your solar ROI: enter your electricity bill, configure your roof, and get a precise payback period in minutes using real local weather data.">
+    <link rel="canonical" href="https://suneyed.com/how-it-works">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+            <span class="nav__logo-sun">☀️</span>
+            SunEyed
+        </a>
+        <ul class="nav__links">
+            <li><a href="how-it-works.html" style="color:var(--blue); font-weight:700;">How It Works</a></li>
+            <li><a href="installers.html">For Installers</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="index.html#download" class="nav__cta">Download Free</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section style="background:var(--bg-alt); padding:56px 24px 48px; text-align:center; border-bottom:1px solid var(--border);">
+    <div class="container">
+        <p class="section-label">SunEyed Walkthrough</p>
+        <h1 style="font-size:clamp(28px,4vw,46px); font-weight:800; margin-bottom:14px;">How SunEyed works</h1>
+        <p style="font-size:17px; color:var(--text-muted); max-width:560px; margin:0 auto;">
+            From your electricity bill to your break-even year — a step-by-step look at what the app does and why each input matters.
+        </p>
+    </div>
+</section>
+
+<!-- ===== STEPS ===== -->
+<section class="section">
+    <div class="container" style="max-width:760px;">
+
+        <div class="step-row">
+            <div class="step-row__num">1</div>
+            <div class="step-row__body">
+                <h3>Enter your electricity usage</h3>
+                <p>Start by telling SunEyed how much electricity you use. You can enter a single yearly total (in kWh) or go month-by-month for a more accurate picture — SunEyed will compare your actual seasonal usage against your monthly solar production.</p>
+                <p>Then enter your electricity rate in cents per kWh. This is the number that turns your production estimate into a dollar savings figure. You can find both numbers on any electricity bill.</p>
+                <div class="step-row__sub">
+                    <strong>Tip:</strong> Use your real monthly numbers if you have them. Summer air conditioning and winter heating create seasonal swings that significantly affect how much net metering helps you.
+                </div>
+            </div>
+        </div>
+
+        <div class="step-row">
+            <div class="step-row__num">2</div>
+            <div class="step-row__body">
+                <h3>Set your location</h3>
+                <p>Tap "Use My Location" or enter your latitude and longitude manually. SunEyed finds the nearest of 40,000+ weather stations in its database and loads the monthly average solar radiation for your area.</p>
+                <p>This is the key difference between SunEyed and a generic online calculator: your production estimate is based on how much sun actually reaches the ground at your specific location — not a state-level average.</p>
+                <div class="step-row__sub">
+                    <strong>Data source:</strong> NASA Surface Meteorology and Solar Energy (SSE) / NOAA integrated into a database of ~40,000 global stations. The app stores this database locally — it works without a network connection after the first launch.
+                </div>
+            </div>
+        </div>
+
+        <div class="step-row">
+            <div class="step-row__num">3</div>
+            <div class="step-row__body">
+                <h3>Configure your roof and panels</h3>
+                <p>Add one or more panel groups — one for each distinct roof face. For each group, set:</p>
+                <ul style="color:var(--text-muted); margin:0 0 14px 20px; line-height:1.8;">
+                    <li><strong>Panel count</strong> — how many panels you're modeling</li>
+                    <li><strong>Azimuth (direction)</strong> — which compass direction the panels face (south = most production in the northern hemisphere)</li>
+                    <li><strong>Roof slope (tilt)</strong> — the pitch of the roof in degrees</li>
+                    <li><strong>Panel efficiency & system losses</strong> — defaults match standard residential equipment</li>
+                </ul>
+                <p>You can use the phone's compass sensor to measure the azimuth by pointing the phone along the panel surface — no guessing required.</p>
+            </div>
+        </div>
+
+        <div class="step-row">
+            <div class="step-row__num">4</div>
+            <div class="step-row__body">
+                <h3>Map obstructions (optional but powerful)</h3>
+                <p>Trees, chimneys, neighboring rooftops, and dormers can silently cut production by 10–30%. SunEyed's obstruction tool lets you trace the skyline silhouette of any obstruction and plots it directly on the sun path chart for your location.</p>
+                <p>Two modes:</p>
+                <ul style="color:var(--text-muted); margin:0 0 14px 20px; line-height:1.8;">
+                    <li><strong>Sensor mode</strong> — point the top edge of your iPhone at the obstruction and sweep slowly. The gyroscope tracks the outline in real time.</li>
+                    <li><strong>Camera mode</strong> — use the rear camera viewfinder as a sight, align the crosshair with the treetop or roofline, and sweep. The live video helps with precision.</li>
+                </ul>
+                <p>The result is a "Solar Access" percentage — the fraction of available sun that reaches your panels. A tree that blocks 15% of your sun path cuts your annual production by roughly 15%.</p>
+                <div class="step-row__sub">
+                    <strong>Note:</strong> The camera is never recorded or transmitted. It's used only as a live viewfinder while you're actively mapping.
+                </div>
+            </div>
+        </div>
+
+        <div class="step-row">
+            <div class="step-row__num">5</div>
+            <div class="step-row__body">
+                <h3>See your savings and payback period</h3>
+                <p>The Savings screen shows your full ROI breakdown:</p>
+                <ul style="color:var(--text-muted); margin:0 0 14px 20px; line-height:1.8;">
+                    <li><strong>Annual savings ($)</strong> — how much your electricity bill goes down per year</li>
+                    <li><strong>Break-even (years)</strong> — installation cost ÷ annual savings</li>
+                    <li><strong>Annual production (kWh)</strong> — total electricity your system generates</li>
+                    <li><strong>Monthly bar chart</strong> — usage vs. production for each month, color-coded for over/under-production</li>
+                    <li><strong>Net metering calculation</strong> — choose monthly or annual settlement to match your utility's policy</li>
+                </ul>
+                <div class="step-row__sub">
+                    <strong>What the number means:</strong> A break-even of 8 years means after 8 years the system has paid for itself through bill savings. Solar panels typically last 25–30 years, so most systems return 3–4x their cost over their lifetime.
+                </div>
+            </div>
+        </div>
+
+        <div class="step-row">
+            <div class="step-row__num">6</div>
+            <div class="step-row__body">
+                <h3>Talk to an installer — on your terms</h3>
+                <p>With your numbers in hand, you can request quotes from local solar installers directly in the app. Your system size, estimated production, and savings figure go with you — so your first conversation is about confirming details, not starting from zero.</p>
+                <p>Copy your summary to the clipboard and paste it into any email or message to share with an installer of your choice.</p>
+                <div class="step-row__sub">
+                    <strong>SunEyed doesn't sell your contact information.</strong> You choose which installers to contact and when.
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== FAQ TEASER ===== -->
+<section class="section section--alt">
+    <div class="container" style="max-width:720px; text-align:center;">
+        <h2 style="font-size:26px; margin-bottom:12px;">Still have questions?</h2>
+        <p style="color:var(--text-muted); margin-bottom:28px;">The support page covers accuracy, net metering, obstruction mapping, and the commercial license in detail.</p>
+        <a href="support.html" class="btn btn--outline">View FAQ & Support →</a>
+    </div>
+</section>
+
+<!-- ===== DOWNLOAD CTA ===== -->
+<section class="section" style="text-align:center; background:var(--blue); padding:72px 24px;">
+    <p style="color:rgba(255,255,255,0.7); font-size:14px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:14px;">Free iOS App</p>
+    <h2 style="color:#fff; font-size:clamp(24px,3.5vw,38px); margin-bottom:14px;">Ready to see your number?</h2>
+    <p style="color:rgba(255,255,255,0.78); font-size:17px; max-width:420px; margin:0 auto 36px;">Download SunEyed for free. No sign-up. No sales pitch. Your data stays on your phone.</p>
+    <a href="https://apps.apple.com/app/id[YOUR_APP_ID]" class="appstore-badge" aria-label="Download on the App Store">
+        <span class="appstore-badge__icon">&#63743;</span>
+        <span class="appstore-badge__text">
+            <span class="appstore-badge__sub">Download on the</span>
+            <span class="appstore-badge__main">App Store</span>
+        </span>
+    </a>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__logo">☀️ SunEyed</div>
+        <ul class="footer__links">
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="installers.html">For Installers</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="footer__inner">
+        <p class="footer__copy">&copy; 2026 SunEyed. All rights reserved. &mdash; <a href="mailto:support@suneyed.com" style="color:rgba(255,255,255,0.45)">support@suneyed.com</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

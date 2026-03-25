@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Privacy Policy — SunEyed</title>
+    <meta name="description" content="SunEyed privacy policy. What data is collected, how it is used, and your rights.">
+    <link rel="canonical" href="https://suneyed.com/privacy">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+    <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+            <span class="nav__logo-sun">☀️</span>
+            SunEyed
+        </a>
+        <ul class="nav__links">
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="installers.html">For Installers</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="index.html#download" class="nav__cta">Download Free</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page-content">
+
+<h1>Privacy Policy</h1>
+<p class="meta">SunEyed &mdash; Last updated: March 22, 2026</p>
+
+<p>SunEyed ("the app", "we", "our") is a solar savings calculator for iOS. This policy explains what information is collected, how it is used, and your choices.</p>
+
+<h2>1. Information We Collect</h2>
+
+<h2>1.1 Information you provide</h2>
+<p>The app asks you to enter:</p>
+<ul>
+    <li>Your electricity usage (monthly or annual kWh)</li>
+    <li>Your electricity rate ($/kWh)</li>
+    <li>Solar panel configuration (count, roof slope, orientation)</li>
+    <li>Installation cost estimate</li>
+</ul>
+<p>This information is stored <strong>locally on your device only</strong> using Apple's SwiftData framework. It is never transmitted to our servers.</p>
+
+<h2>1.2 Location</h2>
+<p>The app requests your device location to identify the nearest solar weather station and calculate accurate solar radiation for your area. Location is used only within the app to perform calculations.</p>
+<p>Your most recent latitude and longitude coordinates are stored in our cloud database (Firebase Firestore) to help us understand where the app is being used geographically. No location history is retained — only the last known position.</p>
+
+<h2>1.3 Usage data</h2>
+<p>Each time you open the app, we record:</p>
+<ul>
+    <li>An anonymous device identifier (a random UUID generated at first launch — no name, email, or Apple ID is associated with it)</li>
+    <li>The number of app sessions</li>
+    <li>The number of distinct locations where the app has been used</li>
+    <li>Whether you have selected "private use" or "commercial use"</li>
+    <li>App version and platform (iOS)</li>
+    <li>Timestamp of last activity</li>
+</ul>
+<p>This data is stored in Firebase Firestore and is used to understand usage patterns and detect potential misuse of the free tier.</p>
+
+<h2>1.4 Camera</h2>
+<p>The app can optionally use the rear camera to help you trace obstruction skylines (trees, chimneys) on a sun path chart. <strong>The camera feed is never recorded, saved, or transmitted.</strong> It is displayed live on your screen only while you are actively using the obstruction mapping feature.</p>
+
+<h2>1.5 Crash reports</h2>
+<p>If the app crashes, Firebase Crashlytics automatically collects a crash report including the device model, iOS version, and the app state at the time of the crash. No personal information is included in crash reports.</p>
+
+<h2>2. How We Use Your Information</h2>
+<ul>
+    <li><strong>Solar calculations</strong> — location and panel configuration data are used entirely on-device to compute energy production and savings estimates.</li>
+    <li><strong>Usage analytics</strong> — aggregate, anonymous usage data helps us understand which features are used and improve the app.</li>
+    <li><strong>Abuse detection</strong> — the number of distinct locations is used to detect whether the free personal tier is being used for commercial purposes.</li>
+    <li><strong>Crash diagnostics</strong> — crash reports help us identify and fix bugs.</li>
+</ul>
+<p>We do not sell your data. We do not use your data for advertising.</p>
+
+<h2>3. Third-Party Services</h2>
+<p>The app uses the following third-party services, each with their own privacy policies:</p>
+<ul>
+    <li><strong>Google Firebase (Firestore, Analytics, Crashlytics)</strong> — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+</ul>
+<p>Firebase services are operated by Google LLC and data may be stored on servers in the United States.</p>
+
+<h2>4. Data Retention</h2>
+<p>Your analysis data (electricity usage, panel configuration) remains on your device and is deleted when you uninstall the app.</p>
+<p>Your anonymous usage record in Firebase is retained for as long as necessary to provide the service. You may request deletion at any time by contacting us (see Section 6).</p>
+
+<h2>5. Children's Privacy</h2>
+<p>SunEyed is rated 4+ and does not knowingly collect any information from children under the age of 13.</p>
+
+<h2>6. Your Rights &amp; Contact</h2>
+<p>You may request access to, correction of, or deletion of any personal data we hold by contacting us at:</p>
+<p><a href="mailto:support@suneyed.com">support@suneyed.com</a></p>
+<p>We will respond within 30 days.</p>
+
+<h2>7. Changes to This Policy</h2>
+<p>We may update this policy as the app evolves. The "Last updated" date at the top of this page reflects the most recent revision. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+<hr>
+<p style="font-size:13px; color:#aaa;">&copy; 2026 SunEyed. All rights reserved. &mdash; <a href="support.html">Support</a></p>
+
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__logo">☀️ SunEyed</div>
+        <ul class="footer__links">
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="installers.html">For Installers</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="footer__inner">
+        <p class="footer__copy">&copy; 2026 SunEyed. All rights reserved. &mdash; <a href="mailto:support@suneyed.com" style="color:rgba(255,255,255,0.45)">support@suneyed.com</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
