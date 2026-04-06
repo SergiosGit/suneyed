@@ -243,12 +243,31 @@ h1, h2, h3 {
 }
 
 .screenshot-card {
-    background: var(--bg-alt);
-    border-radius: var(--radius);
-    overflow: hidden;
     width: 200px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.device-frame {
+    position: relative;
+    background: #1c1c1e;
+    border-radius: 28px;
+    padding: 12px 6px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow:
+        0 0 0 1.5px #3a3a3c,
+        inset 0 0 0 1px #2c2c2e,
+        0 12px 36px rgba(0,0,0,0.22);
+}
+
+
+.device-frame img {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .screenshot-card__img-placeholder {
